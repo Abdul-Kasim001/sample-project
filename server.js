@@ -9,11 +9,11 @@ config({
   path: "./.env",
 });
 
-const database = process.env.DATABASE;
+
 
 const port = process.env.PORT || 8000;
 
-connect(database).then((res) => {
+connect("mongodb+srv://kasim:123456kasi@cluster0.wj30r.mongodb.net/botell").then((res) => {
   console.log("DB Connected");
 });
 
